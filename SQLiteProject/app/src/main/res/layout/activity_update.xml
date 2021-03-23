@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <Button
+        android:id="@+id/update_btnSave"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="124dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/update_txtName"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/update_txtName"
+        app:layout_constraintTop_toBottomOf="@+id/update_txtName" />
+
+    <EditText
+        android:id="@+id/update_txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="388dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/update_btnDelete"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_btnSave" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Switch"
+        app:layout_constraintEnd_toEndOf="@+id/update_txtName"
+        app:layout_constraintStart_toStartOf="@+id/update_txtName"
+        app:layout_constraintTop_toBottomOf="@+id/update_txtName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
